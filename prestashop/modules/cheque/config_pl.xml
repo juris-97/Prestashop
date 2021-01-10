@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>cheque</name>
+	<displayName><![CDATA[Czek]]></displayName>
+	<version><![CDATA[2.7.2]]></version>
+	<description><![CDATA[Moduł ten umożliwia przyjmowanie płatności czekiem.]]></description>
+	<author><![CDATA[PrestaShop]]></author>
+	<tab><![CDATA[payments_gateways]]></tab>
+	<confirmUninstall><![CDATA[Jesteś pewien, że chcesz usunąć wszystkie ustawienia?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

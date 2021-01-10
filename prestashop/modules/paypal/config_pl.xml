@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>paypal</name>
+	<displayName><![CDATA[PayPal]]></displayName>
+	<version><![CDATA[3.15.0]]></version>
+	<description><![CDATA[Akceptuje płatności kartą kredytową (CB, Visa, MasterCard, Amex, Aurore, Cofinoga, 4 gwiazdki) z PayPal.]]></description>
+	<author><![CDATA[202-ecommerce]]></author>
+	<tab><![CDATA[payments_gateways]]></tab>
+	<confirmUninstall><![CDATA[Czy na pewno chcesz usunąć swoje dane?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

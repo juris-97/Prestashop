@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>onboarding</name>
+	<displayName><![CDATA[Wprowadzenie]]></displayName>
+	<version><![CDATA[1.0.2]]></version>
+	<description><![CDATA[Moduł ten wprowadza początkujących użytkownik&oacute;w PrestaShop do ich zaplecza: przez mały zabawny interfejs, pokazuje użytkownikowi, jak uruchomić sklep w kilku prostych krokach.]]></description>
+	<author><![CDATA[PrestaShop]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<is_configurable>0</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>
