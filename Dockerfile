@@ -3,7 +3,7 @@ FROM alpine:3.5 as intermediate
 RUN apk update
 RUN apk add git
 
-#RUN git clone --single-branch https://github.com/ PATH TO OUR GITHUB
+RUN git clone https://github.com/juris-97/Prestashop.git
 
 FROM prestashop/prestashop:1.6.1.9
 
@@ -13,7 +13,7 @@ ARG DATABASE_NAME=prestashop
 ARG DATABASE_PASSWORD=root
 ARG DATABASE_PREFIX=ps_
 
-COPY --from=intermediate /prestashop .
+COPY --from=intermediate /Prestashop/prestashop .
 RUN chmod -R 755 .
 RUN chown -R www-data:www-data /var/www/html
 RUN rm -rf install/
@@ -26,8 +26,8 @@ RUN sed -i "s|'database_password' => 'root'|'database_password' => '${DATABASE_P
 RUN sed -i "s|'ps_'|'${DATABASE_PREFIX}'|g" ./app/config/parameters.ph
 
 RUN mkdir ssl
-COPY --from=intermediate /docker/ssl/000-default.conf /ssl/000-default.conf
-COPY --from=intermediate /ssl.sh .
+COPY --from=intermediate /Prestashop/docker/ssl/000-default.conf /ssl/000-default.conf
+COPY --from=intermediate /Prestashop/ssl.sh .
 
 EXPOSE 80
 EXPOSE 443
