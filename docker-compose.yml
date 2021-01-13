@@ -35,4 +35,4 @@ services:
       - DB_USER=root
       - DB_PASSWD=root
       - DB_NAME=prestashop
-      - PS_INSTALL_AUTO=0
+      - PS_INSTALL_AUTO=0s
